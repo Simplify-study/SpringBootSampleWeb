@@ -1,0 +1,24 @@
+#spring.datasource.driverClassName=org.mariadb.jdbc.Driver
+#spring.datasource.url=jdbc:mariadb://52.78.41.121:3306/TestDB
+#spring.datasource.username=test
+#spring.datasource.password=test
+
+spring.mvc.view.prefix=/WEB-INF/jsp/
+spring.mvc.view.suffix=.jsp
+
+logging:
+  path: c:/dev/log/spring
+  file: log-file  
+  
+---
+spring:
+  profiles: log-windows
+  
+logging:
+  path: c:/dev/log/spring
+---
+spring:
+  profiles: log-linux
+  
+logging:
+  path: /log/spring/
