@@ -47,14 +47,6 @@ log-jdbc | Show(Write) jdbc logs
 log-file | Write logs in files
 log-console | Show logs in console(std-out)
 
-#### Run Script
-```
-java -jar -Dspring.profiles.active=log-linux,log-jdbc,log-file ./SpringExample.jar
-```
+#### Run on Tomcat (tested in Tomcat 8.5)
 
-#### How to run in STS (Run Configuration)
-
-<p align="center">
-  <img width="80%" src="./etc/img/001_run_configuration_for_sts.PNG">
-</p> 
-
+To run on Tomcat, run Maven build this project, in /target foler, SpringBootSampleWeb.war file copy to 'webapp' folder for Tomcat.
